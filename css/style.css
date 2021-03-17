@@ -96,6 +96,7 @@ header#header {
     /*border: 4px solid #0f0;*/
     display: none;
     position: absolute;
+    z-index: 1;
 }
 #header>#gnb ul.subMenu a {
     border: 1px solid rgba(67, 155, 18, 0.0);
@@ -124,6 +125,42 @@ div#subMenuBGLayout {
     position: absolute;
 }
 /* div#subMenuBG */
+
+
+/* div#slide */
+div#slide {
+    height: 300px;
+    /*border: 4px solid #00f;*/
+
+    position: relative;
+    overflow: hidden;
+}
+/*#slide>div#shuttleFrame {
+    border: 4px solid #f00;
+}*/
+#slide a {
+    position: absolute;
+}
+#slide a:not(:first-child) {
+    display: none;
+}
+#slide span {
+    color: #0066ad;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border: 6px solid rgba(67, 155, 18, 0.1);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    position: absolute;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+}
+/* div#slide */
+
 
 
 
