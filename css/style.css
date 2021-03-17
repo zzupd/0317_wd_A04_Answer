@@ -26,6 +26,7 @@ div#wrap             { border: 1px solid #000; }
 /*#wrap>*              { border: 1px solid #000; margin: 1px; }*/
 /*#header>div#headerLogo { border: 1px solid #000; }*/
 /*#header>nav#gnb        { border: 4px solid #f00; }*/
+#contents>div            { border: 1px solid #f80; }
 /* 가이드 라인 */
 
 
@@ -162,9 +163,108 @@ div#slide {
 /* div#slide */
 
 
+/* div#contents */
+div#contents {
+    height: 200px;
+    display: flex;
+}
+#contents>div {
+    width: 400px;
+    padding: 10px;
+}
+
+    /* 싱글탭 공통사항 */
+div#contents>div.singleTab>button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 14px;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    position: relative;
+    left: 40px;
+    top: 1px;
+}
+#contents>.singleTab>div.tabContent {
+    padding: 10px;
+    border: 1px solid #aaa;
+}
+    /* 싱글탭 공통사항 */
+
+    /* div#notice */
+#contents #notice #noticeTabBtn {
+    background-color: #fff;
+}
+#contents #notice span {
+    font-size: 14px;
+    line-height: 28px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+}
+#contents #notice span.subject {
+    width: 268px;
+}
+#contents #notice span.regDate {
+    width: 80px;
+    text-align: right;
+}
+    /* div#notice */
+
+    /* div#gallery */
+#contents #gallery #galleryTabContent {
+    text-align: center;
+}
+#contents #gallery #galleryTabBtn {
+    border-bottom: 1px solid #aaa;
+}
+#contents #gallery img:hover {
+    opacity: 0.6;
+}
+    /* div#gallery */
 
 
 
 
+/* div#contents */
+
+
+
+
+
+/* 레이어 팝업 */
+
+    /* div#contents */
+div#contents span.layerPopupPoint {
+    cursor: pointer;
+}
+    /* div#contents */
+
+
+    /* div#layerPopupBG */
+div#layerPopupBG {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    display: none;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+#layerPopupBG>div#layerPopup {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+    /* div#layerPopupBG */
+
+
+
+/* 레이어 팝업 */
 
 

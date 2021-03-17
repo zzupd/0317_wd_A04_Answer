@@ -28,5 +28,14 @@ $(function(){
     }
     /* 슬라이드 쇼 */
 
+    /* 레이어 팝업 */
+    $("#contents span.layerPopupPoint").click(function(){
+        $("#layerPopupBG").css({"display": "block"});
+    });
+    $("#layerPopupBG button#closeBtn").click(function(){
+        $("#layerPopupBG").css({"display": "none"});
+    });
+    /* 레이어 팝업 */
+
 
 });
