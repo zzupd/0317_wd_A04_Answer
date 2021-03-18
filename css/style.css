@@ -22,11 +22,12 @@ ul            { list-style: none; }
 
 
 /* 가이드 라인 */
-div#wrap             { border: 1px solid #000; }
+/*div#wrap             { border: 1px solid #000; }*/
 /*#wrap>*              { border: 1px solid #000; margin: 1px; }*/
 /*#header>div#headerLogo { border: 1px solid #000; }*/
 /*#header>nav#gnb        { border: 4px solid #f00; }*/
 /*#contents>div            { border: 1px solid #f80; }*/
+/*#wrap>footer#footer      { border: 1px solid #f80; }*/
 /* 가이드 라인 */
 
 
@@ -229,11 +230,68 @@ div#contents>div.singleTab>button {
 }
     /* div#shortcut */
 
-
-
-
-
 /* div#contents */
+
+
+/* footer#footer */
+footer#footer {
+    display: flex;
+}
+
+    /* div#footerLeft */
+#footer {
+    height: 100px;
+}
+#footer>div#footerLeft {
+    width: 840px;
+    /*border: 1px solid #08f;*/
+}
+
+#footer>#footerLeft>#footerGNB {
+    height: 50px;
+    text-align: center;
+    /*border: 1px solid #000;*/
+}
+#footer #footerGNB li {
+    display: inline-block;
+}
+#footer #footerGNB li a {
+    padding: 4px 20px;
+    display: inline-block;
+}
+
+#footer #footerGNB li:nth-child(2n) {  /* 짝수에 해당하는 요소들 선택 */
+    color: #0066ad;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#footer>#footerLeft>#copyright {
+    height: 50px;
+    text-align: center;
+    /*border: 1px solid #000;*/
+}
+    /* div#footerLeft */
+
+    /* div#familySite */
+#footer>div#familySite {
+    text-align: center;
+    /*border: 1px solid #f00;*/
+    flex: 1;  /* 가중치 */
+}
+#footer>#familySite>select {
+    font-size: 20px;
+}
+
+    /* div#familySite */
+
+
+/* footer#footer */
+
+
+
+
+
 
 
 
@@ -298,8 +356,18 @@ div#layerPopupBG {
 }
     /* div#layerPopupBG */
 
-
-
 /* 레이어 팝업 */
+
+
+/* IE, Chrome 동일 결과 적용 */
+header, nav, footer, section, article, detail, main {
+    display: block;
+}
+
+
+
+
+
+
 
 
