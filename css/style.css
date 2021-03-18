@@ -243,7 +243,8 @@ div#contents span.layerPopupPoint {
 div#layerPopupBG {
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0);
+    /* 레이어 팝업은 배경이 완전 투명 */
 
     display: none;
 
@@ -253,6 +254,7 @@ div#layerPopupBG {
 }
 #layerPopupBG>div#layerPopup {
     padding: 20px;
+    border: 6px solid rgba(67, 155, 18, 0.1);
     border-radius: 20px;
     background-color: #fff;
 
@@ -260,6 +262,30 @@ div#layerPopupBG {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+#layerPopupBG h1 {
+    text-align: center;
+    margin: 20px;
+}
+#layerPopupBG p {
+    line-height: 26px;
+    margin: 20px 0;
+}
+#layerPopupBG p span {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+#layerPopupBG #btnArea {
+    text-align: right;
+    padding-right: 80px;
+    margin-bottom: 10px;
+}
+#layerPopupBG button#closeBtn {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 14px;
 }
     /* div#layerPopupBG */
 
